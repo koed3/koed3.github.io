@@ -1,1 +1,16 @@
+section class="features">
+            <div class="container">
+                <h2 class="section-title">What We Do</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h3>우린 여러분과 함께합니다 
+지원하는게임들
 
+section class="features">
+            <div class="container">
+                <h2 class="section-title">What We Do</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h3>지원하는 게임들</h3>

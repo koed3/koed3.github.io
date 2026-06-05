@@ -63,9 +63,34 @@
                         <h3>실시간 소통</h3>
                         <p>고품질 보이스 채널을 통해 끊김 없이 전략을 공유하세요.</p>
                     </div>
+                </div><div class="feature-card" onclick="showSupportPage()">
+    <i class="fa-solid fa-handshake"></i>
+    <h3>우린 여러분과 함께합니다</h3>
+    <p>클릭해서 자세히 보기</p>
                 </div>
             </div>
         </section>
+    <div id="supportPage" style="display:none; text-align:center; padding:50px;">
+    <h2>우린 여러분과 함께합니다</h2>
+
+    <p style="font-size:20px; margin:20px 0;">
+        로블록스, 마인크래프트, 브롤스타즈,
+        롤, 발로란트, 카트라이더,
+        클래시로얄 등...
+    </p>
+
+    <button onclick="goHome()"
+        style="
+            padding:12px 24px;
+            border:none;
+            border-radius:10px;
+            background:#4CAF50;
+            color:white;
+            font-size:16px;
+            cursor:pointer;">
+        홈사이트로 돌아가기
+    </button>
+    </div>
     </main>
 
     <footer>
@@ -87,5 +112,16 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+function showSupportPage() {
+    document.querySelector('.features').style.display = 'none';
+    document.getElementById('supportPage').style.display = 'block';
+}
+
+function goHome() {
+    document.getElementById('supportPage').style.display = 'none';
+    document.querySelector('.features').style.display = 'block';
+}
+    </script>
 </body>
 </html>

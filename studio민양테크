@@ -1,0 +1,36 @@
+<div class="feature-card" onclick="showSupportPage()">
+    <i class="fa-solid fa-handshake"></i>
+    <h3>studio민양테크</h3>
+    <p>클릭해서 자세히 보기</p>
+</div>
+<div id="supportPage" style="display:none; text-align:center; padding:50px;">
+    <h2>studio민양테크</h2>
+
+    <p style="font-size:20px; margin:20px 0;">
+        이 사이트는 민양테크와 함께 만들어 졌습니다.
+        민양테크:
+    </p>
+
+    <button onclick="goHome()"
+        style="
+            padding:12px 24px;
+            border:none;
+            border-radius:10px;
+            background:#4CAF50;
+            color:white;
+            font-size:16px;
+            cursor:pointer;">
+        홈사이트로 돌아가기
+    </button>
+</div>
+<script>
+function showSupportPage() {
+    document.querySelector('.features').style.display = 'none';
+    document.getElementById('supportPage').style.display = 'block';
+}
+
+function goHome() {
+    document.getElementById('supportPage').style.display = 'none';
+    document.querySelector('.features').style.display = 'block';
+}
+</script>

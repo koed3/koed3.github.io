@@ -40,6 +40,11 @@ nav {
     letter-spacing: 1px;
 }
 
+.logo-link {
+    color: #fff;
+    text-decoration: none;
+}
+
 .logo .dot { color: var(--primary-color); }
 
 .nav-status {
@@ -142,6 +147,13 @@ nav {
     border: 1px solid rgba(255,255,255,0.05);
 }
 
+.feature-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .feature-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary-color);
@@ -152,6 +164,99 @@ nav {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sub-hero {
+    min-height: 58vh;
+    display: flex;
+    align-items: center;
+    padding: 150px 5% 80px;
+    background:
+        linear-gradient(135deg, rgba(88, 101, 242, 0.25), rgba(0, 212, 255, 0.08)),
+        radial-gradient(circle at top right, rgba(0, 212, 255, 0.2), transparent 30%),
+        var(--bg-dark);
+}
+
+.sub-hero h1 {
+    font-size: clamp(2.3rem, 7vw, 4.8rem);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.sub-hero p {
+    max-width: 720px;
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.78);
+}
+
+.support-section {
+    padding: 90px 5%;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.game-card {
+    min-height: 210px;
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 18px;
+    padding: 32px;
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 212, 255, 0.45);
+}
+
+.game-card i {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.game-card h3 {
+    margin-bottom: 10px;
+}
+
+.game-card p {
+    color: rgba(255,255,255,0.68);
+}
+
+.support-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 46px;
+}
+
+.secondary-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 28px;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* Footer */

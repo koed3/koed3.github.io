@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 로드 시 애니메이션
-    const heroElements = document.querySelectorAll('.hero .reveal-text, .hero .fade-in');
+    const heroElements = document.querySelectorAll('.reveal-text, .fade-in');
     
     setTimeout(() => {
         heroElements.forEach(el => el.classList.add('active'));

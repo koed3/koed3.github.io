@@ -13,6 +13,7 @@
         클래시로얄 등...
     </p>
 
+<p> 수많은 게임들을 지원합니다</p>
     <button onclick="goHome()"
         style="
             padding:12px 24px;
